@@ -53,7 +53,7 @@ contract TimeWindow is ERC20, Ownable {
     * @param amount the amount of $TW to transfer
     */
     function transfer(address to, uint256 amount) public override checkTime returns (bool) {
-        super.transfer(to, amount);
+        return super.transfer(to, amount);
     }
 
     /**
@@ -64,7 +64,7 @@ contract TimeWindow is ERC20, Ownable {
     * @param amount the amount of $TW to transfer
     */
     function transferFrom(address from, address to, uint256 amount) public override checkTime returns (bool) {
-        super.transferFrom(from, to, amount);
+        return super.transferFrom(from, to, amount);
     }
 
     /**
